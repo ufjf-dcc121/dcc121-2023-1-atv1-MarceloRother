@@ -7,6 +7,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Jogos jogados</title>
         <link rel="stylesheet" href="estilopb.css"/>
+        <style>
+            li.serie{
+                color: green;
+            }
+
+            li.filme{
+                color: blue;
+            }
+
+            .jogo{
+                color: orangered;
+            }
+
+            p> .jogo{
+                border-bottom: dashed;
+            }
+        </style>
     </head>
     
     <body>
@@ -25,27 +42,28 @@
             <p>Três últimos jogos que eu joguei</p>
 
             <ol>
-                <li> Mirage Go</li>
-                <li> Mirage Strike Global Ofensive</li>
-                <li> CS Source mirage 2</li>
-                <li> Hay Day </li>
+                <li class="jogo"> Mirage Go</li>
+                <li class="jogo"> Mirage Strike Global Ofensive</li>
+                <li class="jogo"> CS Source mirage 2</li>
+                <li class="jogo"> Hay Day </li>
             </ol>
+            <p>E o <span class="jogo">Mirage Go</span> foi meu preferido.</p>
 
             <p>Filmes e Séries que eu assisti:</p>
             <ul>    
                 <div>    
                     <li><div>Filmes</div> 
-                        <ul style="color: blue;">
-                            <li>3096 dias de cativeiro</li>
-                            <li>Gato de Botas</li>    
+                        <ul>
+                            <li class="filme">3096 dias de cativeiro</li>
+                            <li class="filme">Gato de Botas</li>    
                         </ul>
                     </li> 
                 </div>
                 <div>
                     <li><div>Séries</div>
-                        <ul style="color: green;">
-                            <li>You</li>
-                            <li>The Last of Us</li>
+                        <ul>
+                            <li class="serie">You</li>
+                            <li class="serie">The Last of Us</li>
                         </ul>
                     </li>
                 </div>    
@@ -55,7 +73,7 @@
         <footer>
             &copy; 2023 &lt;&gt; DCC121
         </footer>
-        
+
         </body>
 
 </html>
